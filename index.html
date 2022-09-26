@@ -6,7 +6,6 @@
         <title>Neurominer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/nm_logo2.ico">
 
 		<!-- CSS here -->
@@ -27,8 +26,8 @@
                 scroll-behavior: smooth;
             }
             #navigation>li>a {
-                font-size: 10pt;
-                padding: 10px 10px;
+                font-size: 11pt;
+                padding: 8px 8px;
             }
             #navigation>li>a::before {
                 bottom: 0px;
@@ -40,9 +39,23 @@
                 background: #ee5038;
             }
             #news_button {
-                background: -webkit-linear-gradient(#eee, #333);
+                font-weight: bold;
+                background: -webkit-linear-gradient(45deg, #bf1e05, #FFB03A);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+            }
+            .news_date {
+                margin-bottom: 0px;
+            }
+            .news_title {
+                font-weight: bold;
+            }
+            .news_link {
+                font-weight: bold;
+                color: #ee5038;
+            }
+            .news_link:hover {
+                color: #bf1e05;
             }
             .section-padd4 {
                 padding-top: 60px;
@@ -255,8 +268,56 @@
             </div>
         </div>
         <!-- Slider Area End -->
+        <!-- News Start -->
+        <section id="news" class="best-features-area section-padd4">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div>
+                        <!-- Section Tittle -->
+                        <div class="row">
+                            <div class="section-tittle">
+                                <h2>News & Updates</h2>
+                            </div>
+                        </div>
+                        <!-- Section caption -->
+                        <div class="row">
+                            <div class="single-features mb-70">
+                                <div class="features-icon">
+                                    <img class="icon_image" src="assets/img/icons/nm_icon.png" alt="">
+                                </div>
+                                <div class="features-caption">
+                                    <p class="news_date">26 Sep. 2022</p>
+                                    <h3><span class="news_title">New feature available:</span> ML Interpreter</h3>
+                                    <p>
+                                        NeuroMiner now allows for individual prediction result interpretation through the visualisation window.<br>
+                                        <a class="news_link" href="https://neurominer-git.github.io/NeuroMiner_1.1/4.7_mainmenu_display_training_results.html#ml-interpreter-mli-results" target="_blank">Click here to learn more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="single-features mb-70">
+                                <div class="features-icon">
+                                    <img class="icon_image" src="assets/img/icons/nm_icon.png" alt="">
+                                </div>
+                                <div class="features-caption">
+                                    <p class="news_date">26 Sep. 2022</p>
+                                    <h3><span class="news_title">New feature available:</span> Sample size estimator</h3>
+                                    <p>
+                                        NeuroMiner now allows you to estimate the performance of models trained with simulated data
+                                        in order to find out the optimal sample size needed for your analysis.<br>
+                                        <a class="news_link" href="https://neurominer-git.github.io/NeuroMiner_1.1/4.12_mainmenu_estimate_sample_size.html" target="_blank">Click here to learn more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News End -->
         <!-- Best Features Start -->
-        <section id="key-features" class="best-features-area section-padd4">
+        <section id="key-features" class="best-features-area section-padd4 light-grey">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-xl-8 col-lg-10">
@@ -366,14 +427,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Shpe -->
+            <!-- Shape -->
             <div class="features-shpae d-none d-lg-block">
                 <img src="assets/img/shape/nm_features2.png" alt="">
             </div>
         </section>
         <!-- Best Features End -->
         <!-- Open source & free Start -->
-        <section id="free" class="service-area section-padding2 light-grey">
+        <section id="free" class="service-area section-padding2">
             <div class="whole-wrap">
                 <div class="container box_1170">
                     <div class="section-top-border">
@@ -396,7 +457,7 @@
                                     <br>
                                     <br>
                                     <span style="font-weight: bold; color: #27445c;">For feedback or inquiries concerning a commercial license for NeuroMiner,</span><br>
-                                    <a style="font-weight: bold; color: #ee5038;" href="#download">Click here to get in touch with us!</a>
+                                    <a class="news_link" href="#download">Click here to get in touch with us!</a>
                                 </p>
                             </div>
                         </div>
@@ -406,7 +467,7 @@
         </section>
         <!-- Open source & free End -->
         <!-- ML algorithms & data Start -->
-        <section id="machine-learning" class="section-padding2">
+        <section id="machine-learning" class="section-padding2 light-grey">
             <div class="whole-wrap">
                 <div class="container box_1170">
                     <div class="section-top-border">
@@ -442,7 +503,7 @@
         </section>
         <!-- ML algorithms & data  End -->
         <!-- Nested CV Start-->
-        <section id="cross-validation" class="section-padding2 light-grey">
+        <section id="cross-validation" class="section-padding2">
             <div class="whole-wrap">
                 <div class="container box_1170">
                     <div class="section-top-border">
@@ -469,7 +530,7 @@
         </section>
         <!-- Nested CV Area End -->
         <!-- visualisation Start -->
-        <div id="visualisation" class="applic-apps section-padding2">
+        <div id="visualisation" class="applic-apps section-padding2 light-grey">
             <div class="container-fluid" style="max-width: 1200px;">
                 <div class="row">
                     <!-- slider Heading -->
@@ -496,7 +557,7 @@
                 </div>
             </div>
             <!-- OwL -->
-            <div class="visualisation-pics col-xl-8 col-lg-8 col-md-col-md-7">
+            <div class="visualisation-pics col-xl-8 col-lg-8 col-md-col-md-7 light-grey">
                 <div class="visualisation-pics2 app-active owl-carousel" style="right: 0%;">
                     <div class="single-cases-img">
                         <img src="assets/img/gallery/nm1.png" alt="">
@@ -816,7 +877,7 @@
                         <div class="footer-copy-right">
                             <p style="font-size: 11pt;text-align: center;">
                                 <b>Website designed by: Mark Sen Dong</b><br>
-                                <b>All graphical elements are created by: Mark Sen Dong | Copyright &copy;2020 All rights reserved</b><br>
+                                <b>All graphical elements are created by: Mark Sen Dong | Copyright &copy;2022 All rights reserved</b><br>
                                 Graphical design assistant: Lioba Enk | Html assistant: Mira Erhart<br>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 This website is made with a template by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
